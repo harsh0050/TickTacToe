@@ -4,19 +4,20 @@ var counter = 1;
 var flag = false;
 function set(x){
     if(!flag){
-        document.getElementById('winner').innerHTML=counter%2===0?"X":"O";
         var name = get(x.getAttribute("id"));
         if(counter%2===1){
             if(mat[name[0]][name[1]]==0){
                 counter++;
                 mat[name[0]][name[1]]=1;
                 x.style.backgroundImage="url('X.png')";
+                document.getElementById('winner').innerHTML="O";
             }
         }else{
             if(mat[name[0]][name[1]]==0){
                 counter++;
                 x.style.backgroundImage="url('O.png')";
                 mat[name[0]][name[1]]=2;
+                document.getElementById('winner').innerHTML="X";
             }
         }
         x.style.backgroundSize="100% 100%";
