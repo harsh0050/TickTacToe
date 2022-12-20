@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(153, 217, 234);
+}
+#heading{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 1.5%;
+    color:darkblue;
+    font-size: 225%;
+}
+section{
+    margin-top: -2%;
+    font-size: 175%;
+    font-family: 'Brush Script MT', cursive;
+    color:blueviolet ;
+    text-align: center;
+}
+table{
+    margin-left: 25%;
+    height: 65%;
+    width: 48%;
+}
+table, th, td{
+    border-collapse:collapse;
+}
+
+#one{
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+#two{
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+#three{
+    border-bottom: 4px solid black;
+}
+#four{
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+#five{
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+#six{
+    border-bottom: 4px solid black;
+}
+#seven{
+    border-right: 4px solid black;
+}
+#eight{
+    border-right: 4px solid black;
+}
+
+
+th,td{
+    width: 33.33%;
+}
+tr{
+    height: 33.33%;
+}
+.imgset{
+    background-image: url("blank.png");
+}
