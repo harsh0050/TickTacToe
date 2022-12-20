@@ -1,8 +1,5 @@
 var mat = [[0,0,0],[0,0,0],[0,0,0]];
 var counter = 1;
-for(var i = 0; i<mat.length; i++){
-    console.log(mat[i]);
-}
 
 var flag = false;
 function set(x){
@@ -33,20 +30,21 @@ function set(x){
                 document.getElementById('winner').innerHTML="Player 2 Wins!!&#x1F389";
             }
             flag=true;
-            if(counter===10){
+            if(result===0){
                 document.getElementById('winner').innerHTML="Tie&#x1F61E";
             }
-            document.getElementById('ins').innerHTML="Press any key to play again";
+            document.getElementById('ins').innerHTML="Click me or Press any key to play again";
         }
     }
     if(flag){
         document.addEventListener('keypress',function fx(){
             location.reload();    
         });
+        document.getElementById('ins').addEventListener('click', function fx(){
+            location.reload();
+        });
     }
 }
-
-
 
 //checking
 function check(arr){
@@ -107,14 +105,4 @@ function get(n){
             return [2,2];
     }
     return [0,0];
-}
-
-//debug
-function edit(i,j,n){
-    mat[i][j] = n;
-}
-function print(){
-    console.log(mat[0]);
-    console.log(mat[1]);
-    console.log(mat[2]);
 }
