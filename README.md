@@ -1,2 +1,2 @@
 # TickTacToe
-Made by none other that you know who!!
+A Tick Tac Toe game using HTML, CSS and Javascript
